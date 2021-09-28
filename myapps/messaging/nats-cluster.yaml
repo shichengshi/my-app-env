@@ -38,7 +38,10 @@ spec:
     spec:
       containers:
       - name: nats
-        args:
+        command:
+        - /nats-server
+        - --config
+        - nats-server.conf
         - -V
         image: nats:latest
         ports:
