@@ -38,6 +38,8 @@ spec:
     spec:
       containers:
       - name: nats
+        args:
+        - -V
         image: nats:latest
         ports:
         - containerPort: 4222
