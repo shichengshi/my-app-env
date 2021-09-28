@@ -11,7 +11,7 @@ spec:
       # source will be JSON
       jsonBody: true
       # subject name
-      subject: foo
+      subject: test
       # optional backoff time for connection retries.
       # if not provided, default connection backoff time will be used.
       connectionBackoff:
