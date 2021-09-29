@@ -1,15 +1,15 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Sensor
 metadata:
-  name: nats
+  name: nats-guest
 spec:
   dependencies:
-    - name: host-dep
+    - name: guest-dep
       eventSourceName: nats
-      eventName: hostevent
+      eventName: guestevent
   triggers:
     - template:
-        name: slack-host-trigger
+        name: slack-guest-trigger
         slack:
           channel: general
           message: hello world
@@ -18,10 +18,10 @@ spec:
             name: slack-secret
       parameters:
         - src:
-            dependencyName: host-dep
+            dependencyName: guest-dep
             dataKey: body.channel
           dest: slack.channel
         - src:
-            dependencyName: host-dep
+            dependencyName: guest-dep
             dataKey: body.message
           dest: slack.message
