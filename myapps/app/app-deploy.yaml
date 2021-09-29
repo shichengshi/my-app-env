@@ -23,6 +23,6 @@ spec:
         name: my-airtng-node
         env:
         - name: DOCKER_MONGO
-          value: nats.argo-events.svc:4222
+          value: backend.backend.svc:27017
         resources: {}
 status: {}
