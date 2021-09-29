@@ -21,5 +21,8 @@ spec:
       containers:
       - image: yokoyama610/my-airtng-node:latest
         name: my-airtng-node
+        env:
+        - name: DOCKER_MONGO
+          value: nats.argo-events.svc:4222
         resources: {}
 status: {}
