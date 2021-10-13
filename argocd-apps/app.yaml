@@ -10,5 +10,5 @@ spec:
   project: default
   source:
     path: myapps/app
-    repoURL: https://github.com/yokoyama610/my-app-env.git
+    repoURL: https://github.com/shichengshi/my-app-env.git
     targetRevision: HEAD
