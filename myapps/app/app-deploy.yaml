@@ -19,7 +19,7 @@ spec:
         app: app
     spec:
       containers:
-      - image: shichengshi/my-airtng-node:latest
+      - image: shichengshi/my-airtng-node:1.0.0
         name: my-airtng-node
         imagePullPolicy: Always
         env:
