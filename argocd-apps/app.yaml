@@ -12,3 +12,7 @@ spec:
     path: myapps/app
     repoURL: https://github.com/shichengshi/my-app-env.git
     targetRevision: HEAD
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
