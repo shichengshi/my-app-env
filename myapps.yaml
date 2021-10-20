@@ -11,7 +11,7 @@ spec:
     repoURL: https://github.com/shichengshi/my-app-env.git
     targetRevision: HEAD
   project: default
-  # syncPolicy:
-  #   automated:
-  #     prune: true
-  #     selfHeal: true
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
