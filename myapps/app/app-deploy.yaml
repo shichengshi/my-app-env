@@ -19,7 +19,7 @@ spec:
         app: app
     spec:
       containers:
-      - image: shichengshi/my-airtng-node@sha256:f3f8a9bec5ec7fb2ebcd9f1774a13db0c7781fc569ee8a7b5a8fe72680e379a7
+      - image: shichengshi/my-airtng-node@sha256:926b1e757ea75229d79dfb0252aac8fed4ae5e0756901aecc8bacf3916712df2
         name: my-airtng-node
         imagePullPolicy: Always
         env:
