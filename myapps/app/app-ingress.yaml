@@ -8,7 +8,7 @@ metadata:
     nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
 spec:
   rules:
-    - host: app.3.133.145.229.nip.io
+    - host: app.3.137.215.14.nip.io
       http:
         paths:
           - backend:
